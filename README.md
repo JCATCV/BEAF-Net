@@ -13,7 +13,7 @@ We place several examples below (click for details):
    <td> 
       <details> 
       <summary> 
-      <strong>Dance</strong>
+      <strong>Dance (Object removal)</strong>
       </summary> 
       <img src="./demo/dance.gif">
       </details>
@@ -21,7 +21,7 @@ We place several examples below (click for details):
    <td> 
       <details> 
       <summary> 
-      <strong>Hokey</strong>
+      <strong>Hokey (Object removal)</strong>
       </summary> 
       <img src="./demo/hokey.gif">
       </details>
@@ -29,7 +29,7 @@ We place several examples below (click for details):
    <td> 
       <details> 
       <summary> 
-      <strong>Motor</strong>
+      <strong>Motor (Object removal)</strong>
       </summary> 
       <img src="./demo/motor.gif">
       </details>
@@ -38,7 +38,7 @@ We place several examples below (click for details):
 <td> 
       <details> 
       <summary> 
-      <strong>Parkour</strong>
+      <strong>Parkour (Object removal)</strong>
       </summary> 
       <img src="./demo/parkour.gif">
       </details>
@@ -46,7 +46,7 @@ We place several examples below (click for details):
    <td> 
       <details> 
       <summary> 
-      <strong>Swing</strong>
+      <strong>Swing (Object removal)</strong>
       </summary> 
       <img src="./demo/swing.gif">
       </details>
@@ -54,9 +54,59 @@ We place several examples below (click for details):
    <td> 
       <details> 
       <summary> 
-      <strong>Tennis</strong>
+      <strong>Tennis (Object removal)</strong>
       </summary> 
       <img src="./demo/tennis.gif">
+      </details>
+   </td>
+</tr>
+<td> 
+      <details> 
+      <summary> 
+      <strong>Bumps (Corruption restoration)</strong>
+      </summary> 
+      <img src="./demo/bmx_bumps.gif">
+      </details>
+   </td>
+   <td> 
+      <details> 
+      <summary> 
+      <strong>Car (Corruption restoration)</strong>
+      </summary> 
+      <img src="./demo/car_drift.gif">
+      </details>
+   </td>
+   <td> 
+      <details> 
+      <summary> 
+      <strong>Breakflare (Corruption restoration)</strong>
+      </summary> 
+      <img src="./demo/break_flare.gif">
+      </details>
+   </td>
+</tr>
+<td> 
+      <details> 
+      <summary> 
+      <strong>Bus (Dis-occlusion)</strong>
+      </summary> 
+      <img src="./demo/bus.gif">
+      </details>
+   </td>
+   <td> 
+      <details> 
+      <summary> 
+      <strong>Surf (Dis-occlusion)</strong>
+      </summary> 
+      <img src="./demo/surf.gif">
+      </details>
+   </td>
+   <td> 
+      <details> 
+      <summary> 
+      <strong>Fly (Dis-occlusion)</strong>
+      </summary> 
+      <img src="./demo/fly.gif">
       </details>
    </td>
 </tr>

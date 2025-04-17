@@ -6,13 +6,11 @@ import torch.nn as nn
 import torch.optim as optim
 from torch.utils.data import DataLoader
 from tqdm import tqdm
-from core.loss import AdversarialLoss
 from models.e2fgvi import InpaintGenerator as E2FGVI
 from models.flow_net import FlowCompletionNet as FlowModel
 from models.model import InpaintGenerator as IG
 from models.model import Discriminator
 from models.modules.flow_comp_raft import RAFT_bi, FlowLoss, EdgeLoss
-from models.canny.canny_filter import Canny
 import torchvision.transforms as transforms
 from PIL import Image
 from torch.utils.data.distributed import DistributedSampler
@@ -21,8 +19,7 @@ import torch.distributed as dist
 import os
 import random
 import numpy as np
-from core.utils import (create_random_shape_with_random_motion, Stack,
-                        ToTorchFormatTensor, GroupRandomHorizontalFlip)
+from utils import *
 
 
 class TrainDataset(torch.utils.data.Dataset):
@@ -155,7 +152,6 @@ class train(object):
 
         self.flow_loss = FlowLoss().to(self.device)
         self.edge_loss = EdgeLoss().to(self.device)
-        self.canny = Canny(sigma=(2,2), low_threshold=0.1, high_threshold=0.2).to(self.device)
         self.adversarial_loss = AdversarialLoss(type='hinge').to(self.device)
 
         self.optimG = optim.Adam(

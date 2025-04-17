@@ -1,4 +1,7 @@
-# Bidirectional Error-Aware Fusion Network 
+# [TCSVT-2025] Bidirectional Error-Aware Fusion Network 
+
+**[Update]: We uploaded the code of our model. The training framework is the same as E2FGVI, ProPainter, Fuseformer and so on.**
+
 ![overall_structure](./figs/overview.png)
 ### ⚡ Highlights:
 Our propose model has the following *merits* that others have not:
@@ -111,6 +114,18 @@ We place some video examples produced by our model below (click for details):
    </td>
 </tr>
 </table>
+
+## Citation
+If you find this work is helpful, please cite our paper:
+```bibtex
+@article{hou2024bidirectional,
+  title={Bidirectional Error-Aware Fusion Network for Video Inpainting},
+  author={Hou, Jiacheng and Ji, Zhong and Yang, Jinyu and Zheng, Feng},
+  journal={IEEE Transactions on Circuits and Systems for Video Technology},
+  year={2024},
+  publisher={IEEE}
+}
+```
 
 
 ## Reference
